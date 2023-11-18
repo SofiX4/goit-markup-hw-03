@@ -10,10 +10,87 @@ button {
     cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+img {
+    display: block;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--SLATE, #434455);
     background-color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.page-header {
+    padding: 24px 0 24px 0;
+    border-bottom: 1px solid var(--CORNFLOWER, #E7E9FC);
+    background: var(--WHITE, #FFF);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+
+}
+
+.container {
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu {
+    display: flex;
+}
+
+.nav-menu {
+    display: flex;
+    margin-left: 76px;
+    column-gap: 40px;
+
 }
 
 .logo {
@@ -53,6 +130,12 @@ body {
     font-style: normal;
 }
 
+.page-address-list {
+    display: flex;
+    column-gap: 40px;
+
+}
+
 .page-address-link {
     font-size: 16px;
     line-height: 1.5;
@@ -75,6 +158,17 @@ body {
     line-height: 1.07;
     letter-spacing: 1.12px;
     color: var(--WHITE, #FFF);
+    padding-top: 188px;
+    margin-bottom: 48px;
+    width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-con {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 188px;
 }
 
 .hero-btn {
@@ -87,10 +181,19 @@ body {
     background: var(--IRIS, #4D5AE5);
 }
 
+
+
 .hero-btn:hover,
 .hero-btn:focus {
     background: var(--OCEAN, #404BBF);
 }
+
+.benefits-list {
+    display: flex;
+    gap: 24px;
+}
+
+
 
 .benefits-item-title {
     font-size: 20px;
@@ -98,6 +201,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-bottom: 8px;
 }
 
 .benefits-item-text {
@@ -110,6 +214,12 @@ body {
     background-color: #F4F4FD;
 }
 
+.our-team-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
 .our-team-title {
     text-align: center;
     font-size: 36px;
@@ -117,10 +227,14 @@ body {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-bottom: 72px;
 }
 
 .our-team-item {
     background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .our-team-item-title {
@@ -130,6 +244,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.4px;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .our-team-item-text {
@@ -138,6 +254,14 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--SLATE, #434455);
+    margin-bottom: 32px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-title {
@@ -147,6 +271,12 @@ body {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     color: var(--NAVY-BLUE, #2E2F42);
+    margin-bottom: 72px;
+}
+
+.portfolio-item-con {
+    padding: 32px 16px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
 }
 
 .portfolio-item-title {
@@ -167,13 +297,26 @@ body {
     background-color: #2e2f42;
 }
 
+.footer-con {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
 .footer-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--CLOUD, #F4F4FD);
+    margin-top: 18px;
+    width: 264px;
 }
 
 .logo-footer {
     color: #f4f4fd;
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
 }
