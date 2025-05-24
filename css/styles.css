@@ -20,6 +20,10 @@ button {
     cursor: pointer;
 }
 
+img {
+    display: block;
+}
+
 p,
 h1,
 h2,
@@ -35,6 +39,17 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--SLATE, #434455);
     background-color: #FFFFFF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
 }
 
 .container {
@@ -81,6 +96,7 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
 }
 
 .nav-menu {
@@ -94,6 +110,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--NAVY-BLUE, #2E2F42);
+    padding: 24px 0;
 }
 
 .menu-link:hover,
@@ -108,6 +125,7 @@ body {
 
 .page-address-list {
     display: flex;
+    gap: 40px;
 }
 
 .page-address-link {
@@ -194,6 +212,11 @@ body {
     background-color: #F4F4FD;
 }
 
+.team-person {
+    padding: 32px 0;
+
+}
+
 .our-team-title {
     text-align: center;
     font-size: 36px;
@@ -212,6 +235,7 @@ body {
 .our-team-item {
     background-color: #FFFFFF;
     width: calc((100% - 24 * 3) / 4);
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -223,7 +247,7 @@ body {
     letter-spacing: 0.4px;
     color: var(--NAVY-BLUE, #2E2F42);
     margin-bottom: 8px;
-    margin-top: 32px;
+    text-align: center;
 }
 
 .our-team-item-text {
@@ -232,7 +256,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--SLATE, #434455);
-    margin-bottom: 32px;
+    text-align: center;
 }
 
 .portfolio {}
@@ -261,7 +285,7 @@ body {
 }
 
 .portfolio-card {
-    padding: 32px 0 32px 16px;
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -284,7 +308,20 @@ body {
 
 .footer {
     background-color: #2e2f42;
-    padding: 120px 0;
+    padding: 100px 0;
+}
+
+.logo-foot {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+    color: #4D5AE5;
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -292,7 +329,6 @@ body {
     line-height: 1.5;
     letter-spacing: 0.32px;
     color: var(--CLOUD, #F4F4FD);
-    margin-top: 16px;
     max-width: 264px;
 }
 
