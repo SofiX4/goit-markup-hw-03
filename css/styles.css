@@ -45,17 +45,18 @@ body {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
     padding: 0;
+    margin: -1px;
+    white-space: nowrap;
     overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
     border: 0;
-    clip: rect(0 0 0 0);
 }
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -65,12 +66,13 @@ body {
 
 .page-header {
     border-bottom: 1px solid #e7e9fc;
+    padding: 24px 0;
 }
 
 .header-nav {
     display: flex;
     align-items: center;
-    padding: 24px 0;
+
 }
 
 .logo {
@@ -189,7 +191,7 @@ body {
 }
 
 .benefits-item {
-    width: calc((100% - 3 * 24) / 4);
+    width: calc(100% - 72px) / 4;
 }
 
 .benefits-item-title {
